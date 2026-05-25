@@ -690,7 +690,7 @@ function s1Next(){
   const month=document.getElementById('selMonth').value;
   const year=document.getElementById('selYear').value;
   const e=document.getElementById('s1Err');
-  if(!cajero||!day||"month||!year){e.classList.add('on');return;}
+  if(!cajero||!day||!month||!year){e.classList.add('on');return;}
   e.classList.remove('on');
   S.cajero=cajero;S.day=day;S.month=month;S.year=year;
   S.fecha=`${year}-${month}-${day}`;
